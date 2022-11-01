@@ -11,6 +11,7 @@
 		1881F3A22911851A00B7E417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F3A12911851A00B7E417 /* ContentView.swift */; };
 		1881F3A42911851E00B7E417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1881F3A32911851E00B7E417 /* Assets.xcassets */; };
 		1881F3A72911851E00B7E417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1881F3A62911851E00B7E417 /* Preview Assets.xcassets */; };
+		1881F3AF2911861200B7E417 /* DiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F3AE2911861200B7E417 /* DiceResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1881F3A12911851A00B7E417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1881F3A32911851E00B7E417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1881F3A62911851E00B7E417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1881F3AE2911861200B7E417 /* DiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		1881F39E2911851A00B7E417 /* RollDice */ = {
 			isa = PBXGroup;
 			children = (
+				1881F3AD291185FE00B7E417 /* data */,
 				1881F39F2911851A00B7E417 /* RollDiceApp.swift */,
 				1881F3A12911851A00B7E417 /* ContentView.swift */,
 				1881F3A32911851E00B7E417 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				1881F3A62911851E00B7E417 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1881F3AD291185FE00B7E417 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				1881F3AE2911861200B7E417 /* DiceResult.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1881F3A22911851A00B7E417 /* ContentView.swift in Sources */,
+				1881F3AF2911861200B7E417 /* DiceResult.swift in Sources */,
 				1881F3A02911851A00B7E417 /* RollDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
