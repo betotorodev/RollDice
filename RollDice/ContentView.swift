@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+  @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
   let diceTypes = [4, 6, 8, 10, 12, 20, 100]
   let columns: [GridItem] = [
     .init(.adaptive(minimum: 60))
@@ -39,7 +40,13 @@ struct ContentView: View {
   
   func rollDice() {
     currentResult = DiceResult(type: selectedDiceType, number: numberToRoll)
-    stoppedDice = -8
+    if voiceOverEnabled {
+      stoppedDice = numberToRoll
+      savedResults.insert(currentResult, at: 0)
+      save()
+    } else {
+      stoppedDice = -20
+    }
   }
   
   func updateDice() {
@@ -87,6 +94,8 @@ struct ContentView: View {
                 .padding(5)
             }
           }
+          .accessibilityElement()
+          .accessibilityLabel("Latest roll: \(currentResult.description)")
         }
         .disabled(stoppedDice < currentResult.rolls.count)
         
@@ -96,8 +105,10 @@ struct ContentView: View {
               VStack(alignment: .leading) {
                 Text("\(result.number) x D\(result.type)")
                   .font(.headline)
-                Text(result.rolls.map(String.init).joined(separator: ", "))
+                Text(result.description)
               }
+              .accessibilityElement()
+              .accessibilityLabel("\(result.number) D\(result.type), \(result.description)")
             }
           }
         }
