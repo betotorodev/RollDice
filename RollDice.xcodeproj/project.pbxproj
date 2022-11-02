@@ -12,6 +12,7 @@
 		1881F3A42911851E00B7E417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1881F3A32911851E00B7E417 /* Assets.xcassets */; };
 		1881F3A72911851E00B7E417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1881F3A62911851E00B7E417 /* Preview Assets.xcassets */; };
 		1881F3AF2911861200B7E417 /* DiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1881F3AE2911861200B7E417 /* DiceResult.swift */; };
+		18FD2E3F2912FE3600AA27AC /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD2E3E2912FE3600AA27AC /* FileManager-DocumentsDirectory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1881F3A32911851E00B7E417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1881F3A62911851E00B7E417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1881F3AE2911861200B7E417 /* DiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResult.swift; sourceTree = "<group>"; };
+		18FD2E3E2912FE3600AA27AC /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				1881F3AE2911861200B7E417 /* DiceResult.swift */,
+				18FD2E3E2912FE3600AA27AC /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				1881F3A22911851A00B7E417 /* ContentView.swift in Sources */,
 				1881F3AF2911861200B7E417 /* DiceResult.swift in Sources */,
+				18FD2E3F2912FE3600AA27AC /* FileManager-DocumentsDirectory.swift in Sources */,
 				1881F3A02911851A00B7E417 /* RollDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
